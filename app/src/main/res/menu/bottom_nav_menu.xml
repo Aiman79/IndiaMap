@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/explore"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector_explore"
+        android:title="@string/explore"/>
+    <item
+        android:id="@+id/search"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector_search"
+        android:title="@string/search"/>
+    <item
+        android:id="@+id/planner"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector_planner"
+        android:title="@string/planner"/>
+    <item
+        android:id="@+id/rang"
+        android:icon="@drawable/ic_vector_rang"
+        app:showAsAction="withText"
+        android:title="@string/rang"/>
+    <item
+        android:id="@+id/market"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector_cart"
+        android:title="@string/market_place"/>
+   <!-- <item
+        android:id="@+id/support"
+        app:showAsAction="withText"
+        android:icon="@drawable/ic_vector_support"
+        android:title="@string/support"/>-->
+</menu>

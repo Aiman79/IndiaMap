@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".planner.view.DateFragment">
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:id="@+id/cl_main">
+
+       <CalendarView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/calendar_view"
+           app:layout_constraintTop_toTopOf="parent" />
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_start"
+           android:text="@string/start_date"
+           app:layout_constraintTop_toBottomOf="@+id/calendar_view"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="@dimen/_20sdp"/>
+
+       <androidx.appcompat.widget.AppCompatTextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/tv_end"
+           android:text="@string/end_date"
+           app:layout_constraintTop_toBottomOf="@+id/calendar_view"
+           app:layout_constraintEnd_toEndOf="parent"
+           android:layout_marginEnd="@dimen/_20sdp"/>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

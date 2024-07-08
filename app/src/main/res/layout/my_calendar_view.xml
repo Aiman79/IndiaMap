@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_200"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="60sp"
+        android:height="60sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:tint="@color/black"
+            android:src="@drawable/ic_vector_left_arrow"/>
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_weight="0.6"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:text="April 2016"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/black"/>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:src="@drawable/ic_vector_right_arrow"
+            android:tint="@color/black"/>
+    </LinearLayout>
+
+    <include
+        android:id="@+id/weekLayout"
+        layout="@layout/custom_calendar_weeks_layout" />
+
+
+
+</LinearLayout>

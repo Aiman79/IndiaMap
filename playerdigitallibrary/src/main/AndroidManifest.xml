@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rkbuildcon.playerdigitallibrary">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+<!--    <uses-permission android:name="android.permission.INSTANT_APP_FOREGROUND_SERVICE"/>-->
+
+    <application>
+        <activity
+            android:name=".view.activity.AudioPlayerActivity"
+            android:exported="false" />
+
+        <service android:name=".audio.notifications.NotificationService" />
+        <receiver android:name=".audio.notifications.NotificationReciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.playerdigitallibrary.customnotification.action.play"/>
+                <action android:name="com.playerdigitallibrary.customnotification.action.pause"/>
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

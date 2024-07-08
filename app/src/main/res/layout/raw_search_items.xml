@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">-->
+
+  <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+      app:cardElevation="@dimen/_4sdp"
+      app:cardCornerRadius="@dimen/_4sdp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent">
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="@dimen/_100sdp"
+              android:layout_height="@dimen/_100sdp"
+              android:id="@+id/iv_thumbnail"
+              android:src="@drawable/ic_bg_big"
+              android:scaleType="centerCrop"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent"/>
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_title"
+              android:text="tsjrior efergioegierg erg jioejr gjerg joer gejr gj erjg er jgejr igj erojg oerj ge "
+              android:textSize="@dimen/heading_font"
+              android:gravity="start"
+              android:lines="1"
+              android:ellipsize="end"
+              android:textStyle="bold"
+              android:layout_marginStart="@dimen/_5sdp"
+              android:layout_marginEnd="@dimen/_5sdp"
+              android:textColor="@color/text_title"
+              app:layout_constraintTop_toTopOf="parent"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toEndOf="@id/iv_thumbnail"/>
+
+          <androidx.appcompat.widget.AppCompatTextView
+              android:layout_width="0dp"
+              android:layout_height="wrap_content"
+              android:id="@+id/tv_description"
+              android:text="tsjrior efergioegierg erg jioejr jf jfiefier fer fierjfj  gjerg joer gejr gj erjg er jgejr igj erojg oerj ge "
+              android:textSize="@dimen/content_font"
+              android:maxLines="4"
+              android:ellipsize="end"
+              android:gravity="start"
+              android:layout_marginTop="@dimen/_7sdp"
+              android:layout_marginStart="@dimen/_5sdp"
+              android:layout_marginEnd="@dimen/_5sdp"
+              android:textColor="@color/text_content"
+              app:layout_constraintTop_toBottomOf="@id/tv_title"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toEndOf="@id/iv_thumbnail"/>
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </androidx.cardview.widget.CardView>
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
